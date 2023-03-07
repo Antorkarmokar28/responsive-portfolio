@@ -254,8 +254,29 @@
 /* footer end */
 /* responsive style */
 @media screen and (max-width:576px) {
-    .about-info-container, .skill-container{
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0;
+        padding: 10px 20px;
+    }
+    .about-info-container,
+    .skill-container,
+    .resume-content,
+    .fotter-container,
+    .banner,
+    .navbar-nav,
+    .navbar{
         flex-direction: column;
+        gap:0px;
+        justify-content: center;
+    }
+    .navbar{
+        align-items: self-end;
+    }
+    .banner img{
+        width: 100%;
     }
     .about{
         padding: 10px 20px;
@@ -264,7 +285,18 @@
         margin-bottom: 10px;
     }
     .what-i-do-description{
-        padding: 0 0;
+        padding: 0 20px;
+    }
+    .skill{
+        padding: 80px;
+        margin-top: 20px;
+    } 
+    .fotter{
+        padding:0 10px;
+    }
+    .footer-message input[type="text"], input[type="email"], textarea{
+        width: 90%;
+        padding: 10px 10px;
     }
 }
 @media screen and (min-width:577px) and (max-width:768px) {
